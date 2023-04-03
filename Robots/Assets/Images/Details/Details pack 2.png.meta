@@ -1,0 +1,922 @@
+fileFormatVersion: 2
+guid: ecb5d0c5e17b32a46886b185bd16077c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3535423382952905189
+    second: BigComputer
+  - first:
+      213: -3527876209986691261
+    second: BigBattery
+  - first:
+      213: -4235921215552265645
+    second: BigGenerator
+  - first:
+      213: -4351958149515565306
+    second: SmallComputer
+  - first:
+      213: 79623348174457341
+    second: Small---
+  - first:
+      213: -5122698954472060978
+    second: MediumGenerator
+  - first:
+      213: 6692388927377884248
+    second: MediumBattery
+  - first:
+      213: 3304969014685561433
+    second: MediumComputer
+  - first:
+      213: 4138687701807442755
+    second: MediumWhell 1
+  - first:
+      213: -4258890659133802033
+    second: MediumWhell 2
+  - first:
+      213: -9010973325829688390
+    second: MediumWhell 3
+  - first:
+      213: 6683677706263171049
+    second: MediumWhell 4
+  - first:
+      213: 8706151874243971426
+    second: MainStone
+  - first:
+      213: -2926100756810944553
+    second: MediumWhellTrack
+  - first:
+      213: 2665695821942684612
+    second: SmallGenerator
+  - first:
+      213: -5995935838868585180
+    second: SmallBattery
+  - first:
+      213: -5777617220211258306
+    second: SmallLight
+  - first:
+      213: 7982478593870848114
+    second: SpecialGun
+  - first:
+      213: -4765933144690420871
+    second: SpecialGunPart
+  - first:
+      213: 9154386053540292725
+    second: Stone
+  - first:
+      213: 3499661321661994841
+    second: SmallLightPart
+  - first:
+      213: 491774608489020795
+    second: "SpecialGun\u0421artridge"
+  - first:
+      213: 3980131498593601973
+    second: Small---Part 1
+  - first:
+      213: 6057172465609979685
+    second: Small---Part 2
+  - first:
+      213: 3386386398706489031
+    second: Small---Part 3
+  - first:
+      213: -4806000786438253268
+    second: lightning 1
+  - first:
+      213: -30038828859279659
+    second: lightning 2
+  - first:
+      213: 172890534326915255
+    second: lightning 4
+  - first:
+      213: 2262097663383881665
+    second: lightning 3
+  - first:
+      213: -2325932006429439269
+    second: SpecialGunBullet
+  - first:
+      213: 7905296160826643746
+    second: SpecialGunSleeve
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BigComputer
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b167b782a27afeec0800000000000000
+      internalID: -3535423382952905189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBattery
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f113c47477a0fc0800000000000000
+      internalID: -3527876209986691261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigGenerator
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352677ae81cf635c0800000000000000
+      internalID: -4235921215552265645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallComputer
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60722c4ee1dba93c0800000000000000
+      internalID: -4351958149515565306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small---
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 385
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df904c76301ea1100800000000000000
+      internalID: 79623348174457341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumGenerator
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 385
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec78d6f217488e8b0800000000000000
+      internalID: -5122698954472060978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumBattery
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 496
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854cd1b854420ec50800000000000000
+      internalID: 6692388927377884248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumComputer
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 241
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9527102fecb9ddd20800000000000000
+      internalID: 3304969014685561433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumWhell 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 128
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ba28e79829f6930800000000000000
+      internalID: 4138687701807442755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumWhell 2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1
+        width: 128
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9b915928165e4c0800000000000000
+      internalID: -4258890659133802033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumWhell 3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1
+        width: 129
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3b669908792f280800000000000000
+      internalID: -9010973325829688390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumWhell 4
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1
+        width: 128
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef8303567131cc50800000000000000
+      internalID: 6683677706263171049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainStone
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 0
+        width: 141
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269c9e0a00772d870800000000000000
+      internalID: 8706151874243971426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumWhellTrack
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 162
+        width: 128
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df28456dd66467d0800000000000000
+      internalID: -2926100756810944553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallGenerator
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbf2220a347ef420800000000000000
+      internalID: 2665695821942684612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBattery
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 257
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42544345f182acca0800000000000000
+      internalID: -5995935838868585180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLight
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 257
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3cc025dfb7c1dfa0800000000000000
+      internalID: -5777617220211258306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpecialGun
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 0
+        width: 125
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270e4d6fcf577ce60800000000000000
+      internalID: 7982478593870848114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpecialGunPart
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 0
+        width: 64
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973977f4e010cddb0800000000000000
+      internalID: -4765933144690420871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 111
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5782f0a1d99ea0f70800000000000000
+      internalID: 9154386053540292725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLightPart
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 0
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95756d71e6b419030800000000000000
+      internalID: 3499661321661994841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "SpecialGun\u0421artridge"
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1
+        width: 53
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d7b80a66223d600800000000000000
+      internalID: 491774608489020795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small---Part 1
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 185
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9c305a2844c3730800000000000000
+      internalID: 3980131498593601973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small---Part 2
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 171
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527b5f3e3466f0450800000000000000
+      internalID: 6057172465609979685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small---Part 3
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 166
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c65d1fdc7cdefe20800000000000000
+      internalID: 3386386398706489031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightning 1
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 762
+        width: 119
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25991e7fb7ad4db0800000000000000
+      internalID: -4806000786438253268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightning 2
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 775
+        width: 110
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6bf5428d7459ff0800000000000000
+      internalID: -30038828859279659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightning 4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 902
+        width: 115
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b05593660b366200800000000000000
+      internalID: 172890534326915255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightning 3
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 900
+        width: 136
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7cc39f6d5946f10800000000000000
+      internalID: 2262097663383881665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpecialGunBullet
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 186
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdacf09d921a8bfd0800000000000000
+      internalID: -2325932006429439269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpecialGunSleeve
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1
+        width: 53
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225d45669f045bd60800000000000000
+      internalID: 7905296160826643746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6e67e728e9db5024682fab3f4ddf6400
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BigGenerator: -4235921215552265645
+      Small---: 79623348174457341
+      SmallBattery: -5995935838868585180
+      MediumGenerator: -5122698954472060978
+      SpecialGunBullet: -2325932006429439269
+      Stone: 9154386053540292725
+      Small---Part 3: 3386386398706489031
+      "SpecialGun\u0421artridge": 491774608489020795
+      MediumWhellTrack: -2926100756810944553
+      SmallLight: -5777617220211258306
+      SmallComputer: -4351958149515565306
+      MediumWhell 4: 6683677706263171049
+      lightning 3: 2262097663383881665
+      MainStone: 8706151874243971426
+      BigBattery: -3527876209986691261
+      MediumComputer: 3304969014685561433
+      lightning 4: 172890534326915255
+      BigComputer: -3535423382952905189
+      SmallLightPart: 3499661321661994841
+      Small---Part 1: 3980131498593601973
+      SmallGenerator: 2665695821942684612
+      lightning 2: -30038828859279659
+      MediumWhell 1: 4138687701807442755
+      Small---Part 2: 6057172465609979685
+      MediumWhell 3: -9010973325829688390
+      MediumBattery: 6692388927377884248
+      SpecialGunPart: -4765933144690420871
+      lightning 1: -4806000786438253268
+      SpecialGun: 7982478593870848114
+      SpecialGunSleeve: 7905296160826643746
+      MediumWhell 2: -4258890659133802033
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

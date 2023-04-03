@@ -1,0 +1,597 @@
+fileFormatVersion: 2
+guid: f46a12c6a183e7148b118bc3ae77b7ec
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8486208239740442331
+    second: BigRotatorBasis
+  - first:
+      213: -8579723870092780317
+    second: BigRotatorHand
+  - first:
+      213: 644768793213174053
+    second: MediumRotatorBasis
+  - first:
+      213: -4853600503396983663
+    second: MediumRotatorHand
+  - first:
+      213: -692520853557032605
+    second: SmallRotatorHand
+  - first:
+      213: 3819213909830815419
+    second: SmallRotatorBasis
+  - first:
+      213: -1322307941473162182
+    second: StoneRed
+  - first:
+      213: -6589884356482029307
+    second: StoneGreen
+  - first:
+      213: 2226383163758318223
+    second: StonePurple
+  - first:
+      213: 1326732691792984306
+    second: BigPiston1
+  - first:
+      213: -3138292395853172199
+    second: BigPiston2
+  - first:
+      213: 7903716535582243390
+    second: BigPiston3
+  - first:
+      213: 1209896326629044424
+    second: MediumPiston1
+  - first:
+      213: 4251839137863288242
+    second: MediumPiston2
+  - first:
+      213: 3971228685275085364
+    second: MediumPiston3
+  - first:
+      213: -9220810462021300237
+    second: SmallPiston1
+  - first:
+      213: -8252982607856293109
+    second: SmallPiston2
+  - first:
+      213: -7635358185443499723
+    second: SmallPiston3
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BigRotatorBasis
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 157
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6d8b3ae6115c570800000000000000
+      internalID: 8486208239740442331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigRotatorHand
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 649
+        width: 216
+        height: 366
+      alignment: 9
+      pivot: {x: 0.027704168, y: 0.50100625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec1e24f892bee880800000000000000
+      internalID: -8579723870092780317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumRotatorBasis
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 99
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5218ab12dcda2f800800000000000000
+      internalID: 644768793213174053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumRotatorHand
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 9
+        width: 146
+        height: 240
+      alignment: 9
+      pivot: {x: 0.05, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c9d51ce0c84acb0800000000000000
+      internalID: -4853600503396983663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallRotatorHand
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 905
+        width: 73
+        height: 110
+      alignment: 9
+      pivot: {x: 0.044252995, y: 0.49601996}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369ce2ce3fba366f0800000000000000
+      internalID: -692520853557032605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallRotatorBasis
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 896
+        width: 47
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe42b0e0d2900530800000000000000
+      internalID: 3819213909830815419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoneRed
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 25
+        width: 205
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c60d0eee736ade0800000000000000
+      internalID: -1322307941473162182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StoneGreen
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 25
+        width: 124
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5092cfca7170c84a0800000000000000
+      internalID: -6589884356482029307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StonePurple
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 25
+        width: 206
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8299b901b3b5ee10800000000000000
+      internalID: 2226383163758318223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPiston1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8f7369a50896210800000000000000
+      internalID: 1326732691792984306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPiston2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 266
+        width: 353
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912bcdf71bb8274d0800000000000000
+      internalID: -3138292395853172199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPiston3
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 289
+        width: 287
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ab2cc3054afad60800000000000000
+      internalID: 7903716535582243390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumPiston1
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 640
+        width: 255
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c036cb7c4a6ac010800000000000000
+      internalID: 1209896326629044424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumPiston2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 658
+        width: 223
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5c17e2b21910b30800000000000000
+      internalID: 4251839137863288242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumPiston3
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 673
+        width: 161
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ab9a3e273ac1730800000000000000
+      internalID: 3971228685275085364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallPiston1
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 896
+        width: 127
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ffc30e1db9190080800000000000000
+      internalID: -9220810462021300237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallPiston2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 908
+        width: 92
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0baf395b04877d80800000000000000
+      internalID: -8252982607856293109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallPiston3
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 913
+        width: 66
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531e4c72f22c90690800000000000000
+      internalID: -7635358185443499723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 72a5485fb7b51d7478902baaf4a5f9cd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SmallPiston1: -9220810462021300237
+      StoneGreen: -6589884356482029307
+      BigPiston3: 7903716535582243390
+      BigPiston1: 1326732691792984306
+      SmallRotatorHand: -692520853557032605
+      MediumPiston2: 4251839137863288242
+      BigRotatorBasis: 8486208239740442331
+      BigPiston2: -3138292395853172199
+      MediumRotatorBasis: 644768793213174053
+      SmallPiston2: -8252982607856293109
+      SmallPiston3: -7635358185443499723
+      MediumPiston3: 3971228685275085364
+      StonePurple: 2226383163758318223
+      StoneRed: -1322307941473162182
+      BigRotatorHand: -8579723870092780317
+      SmallRotatorBasis: 3819213909830815419
+      MediumPiston1: 1209896326629044424
+      MediumRotatorHand: -4853600503396983663
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
