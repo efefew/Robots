@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using UnityEngine;
 public static class ResourcesStat
 {
@@ -31,131 +32,6 @@ public static class InfoCon
     public static bool BeController;
     public delegate void CheckConteiners();
     public static CheckConteiners checkConteiners;
-}
-public static class StringModification
-{
-    public static float ToFloat(this string s)
-    {
-        return Convert.ToSingle(s.Replace('.', ','));
-    }
-    public static float[] ToFloat(this string[] s)
-    {
-        float[] sFloat = new float[s.Length];
-        for (int i = 0; i < s.Length; i++)
-        {
-            sFloat[i] = Convert.ToSingle(s[i].Replace('.', ','));
-        }
-        return sFloat;
-    }
-
-    public static int ToInt(this string s)
-    {
-        return Convert.ToInt32(s);
-    }
-    public static int[] ToInt(this string[] s)
-    {
-        int[] sInt = new int[s.Length];
-        for (int i = 0; i < s.Length; i++)
-        {
-            sInt[i] = Convert.ToInt32(s[i]);
-        }
-        return sInt;
-    }
-
-    public static Vector2 ToVector2(this string s)
-    {
-        float[] Arr = s.Split(' ').ToFloat();
-        return new Vector2(Arr[0], Arr[1]);
-    }
-    public static Vector2[] ToVector2(this string[] s)
-    {
-        float[] Arr = s.ToFloat();
-        Vector2[] vec = new Vector2[s.Length / 2];
-        for (int i = 0; i < vec.Length; i++)
-            vec[i] = new Vector2(Arr[i * 2], Arr[i * 2 + 1]);
-        return vec;
-    }
-
-    public static bool ToBool(this string s)
-    {
-        if (s == "true" || s == "1")
-            return true;
-        else
-            return false;
-    }
-    public static bool[] ToArrBool(this string s)
-    {
-        bool[] Be = new bool[s.Length];
-        for (int i = 0; i < s.Length; i++)
-            Be[i] = s[i] == '1' ? true : false;
-        return Be;
-    }
-
-    public static string ToOneString(this string[] s, string separator = "", bool ClearNull = true)
-    {
-        string str = "";
-        if (s.Length > 0)
-        {//d "" ff
-            str = s[0];
-            if (s.Length > 1)
-                for (int i = 1; i < s.Length; i++)
-                    if (s[i] != "" || !ClearNull)
-                        str += separator + s[i];
-                    else
-                        str += s[i];
-        }
-        return str;
-    }
-    public static string ToOneString(this bool[] b)
-    {
-        string str = "";
-        if (b.Length > 0)
-        {
-            for (int i = 0; i < b.Length; i++)
-                if (b[i])
-                    str += '1';
-                else
-                    str += '0';
-        }
-        return str;
-    }
-}
-public static class CharModification
-{
-    public static int ToInt(this char c)
-    {
-        switch (c)
-        {
-            case '0': return 0;
-            case '1': return 1;
-            case '2': return 2;
-            case '3': return 3;
-            case '4': return 4;
-            case '5': return 5;
-            case '6': return 6;
-            case '7': return 7;
-            case '8': return 8;
-            case '9': return 9;
-            default: return -1;
-        }
-    }
-    public static char ToChar(this int i)
-    {
-        switch (i)
-        {
-            case 0: return '0';
-            case 1: return '1';
-            case 2: return '2';
-            case 3: return '3';
-            case 4: return '4';
-            case 5: return '5';
-            case 6: return '6';
-            case 7: return '7';
-            case 8: return '8';
-            case 9: return '9';
-            default: return '-';
-        }
-    }
 }
 public static class Setting
 {

@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ConstructorManager : MonoBehaviour
 {
+    #region Properties
+
     public bool BeActiveOrientation { get; set; }
 
     /// <summary>
@@ -15,6 +18,11 @@ public class ConstructorManager : MonoBehaviour
     public bool BeDelete { get; set; }
     public bool BeIndexVisible { get; set; }
     public bool BeInfoDetailControler { get; set; }
+
+    #endregion Properties
+
+    #region Fields
+
     private const float scaleCoefficent = 16.66666f;
     private AreaScript areaScript, areaScriptFantom;
     private bool beArea, checkArea;
@@ -37,7 +45,9 @@ public class ConstructorManager : MonoBehaviour
     public Toggle ToggleOrientation, TogglePosition, ToggleDelete;
     public ChangeValue typePositionBuild, typeRotateBuild;
 
-    #region UNITY METHODS
+    #endregion Fields
+
+    #region Methods
 
     private void Awake()
     {
@@ -57,10 +67,7 @@ public class ConstructorManager : MonoBehaviour
         trCamera = Camera.main.transform;
     }
 
-    private void OnDisable()
-    {
-        Clear();
-    }
+    private void OnDisable() => Clear();
 
     private void OnEnable()
     {
@@ -84,9 +91,11 @@ public class ConstructorManager : MonoBehaviour
     {
         Camera c = Camera.main;
         Event e = Event.current;
-        Vector2 mousePos = new Vector2();
-        mousePos.x = e.mousePosition.x;
-        mousePos.y = c.pixelHeight - e.mousePosition.y;
+        Vector2 mousePos = new()
+        {
+            x = e.mousePosition.x,
+            y = c.pixelHeight - e.mousePosition.y
+        };
         ScreenPos = new Vector3(mousePos.x, mousePos.y, c.nearClipPlane);
         pos = c.ScreenToWorldPoint(ScreenPos);
     }
@@ -96,7 +105,7 @@ public class ConstructorManager : MonoBehaviour
         if (InfoCon.BeDelete != BeDelete)
         {
             InfoCon.BeDelete = BeDelete;
-            StartCoroutine(CheckConteinersOnChangeDeleteButton());
+            _ = StartCoroutine(CheckConteinersOnChangeDeleteButton());
         }
         if (InfoCon.BeController)
         {
@@ -116,10 +125,10 @@ public class ConstructorManager : MonoBehaviour
             CheckCreate(Area, AreaFantom, areaScript, areaScriptFantom);
         }
         else
+        {
             ClearAreas();
+        }
     }
-
-    #endregion UNITY METHODS
 
     /// <summary>
     /// Расчёт стоимости робота
@@ -159,7 +168,7 @@ public class ConstructorManager : MonoBehaviour
     /// <param name="areaScriptFantom">скрипт зоны-фантома</param>
     private void CheckCreate(GameObject area, GameObject areaFantom, AreaScript areaScript, AreaScript areaScriptFantom)
     {
-        areaScript.UpdateArea();
+        _ = areaScript.UpdateArea();
         Transform targetConteiner = RaycastHitConteiner(areaScript);//ячейка в курсоре
         if (ValidateArea(area.transform, areaScript, targetConteiner))
         {
@@ -172,7 +181,7 @@ public class ConstructorManager : MonoBehaviour
             return;
         }
 
-        areaScriptFantom.UpdateArea();
+        _ = areaScriptFantom.UpdateArea();
         area.gameObject.SetActive(false);
         areaFantom.gameObject.SetActive(true);
         targetConteiner = areaScript.conteiners[0].transform;
@@ -206,9 +215,14 @@ public class ConstructorManager : MonoBehaviour
         Vector3 StartRay = pos;
         RaycastHit2D[] h = Physics2D.RaycastAll(StartRay, EndRay, LayerMask.GetMask("Detail"));
         if (h.Length > 0)
+        {
             for (int i = 0; i < h.Length; i++)
+            {
                 if (h[i].collider.GetComponent<DetailObject>() && h[i].collider.gameObject.layer == 8)
                     return h[i].collider.GetComponent<DetailObject>();
+            }
+        }
+
         return null;
     }
 
@@ -235,12 +249,19 @@ public class ConstructorManager : MonoBehaviour
         ToggleOrientation.isOn = false;
         ToggleDelete.isOn = false;
         if (MainComputer && MainComputer.transform.childCount > 0)
+        {
             for (int child = 0; child < MainComputer.transform.childCount; child++)
+            {
                 if (MainComputer.transform.GetChild(child).name.Replace(" ", "") == "conector")
                     Destroy(MainComputer.transform.GetChild(child).gameObject);
+            }
+        }
+
         if (Robot && Robot.transform.childCount > 1)
+        {
             for (int child = 1; child < Robot.transform.childCount; child++)
                 Destroy(Robot.transform.GetChild(child).gameObject);
+        }
     }
 
     /// <summary>
@@ -274,7 +295,7 @@ public class ConstructorManager : MonoBehaviour
     /// <returns>изображения</returns>
     private Image[] ClearCollidersAndGetImages(Transform obj, bool main = true)
     {
-        List<Image> images = new List<Image>();
+        List<Image> images = new();
         if (main)
         {
             obj.GetComponent<DetailObject>().enabled = false;
@@ -284,6 +305,7 @@ public class ConstructorManager : MonoBehaviour
         }
 
         if (obj.childCount > 0)
+        {
             for (int i = 0; i < obj.childCount; i++)
             {
                 Transform child = obj.GetChild(i);
@@ -293,6 +315,8 @@ public class ConstructorManager : MonoBehaviour
 
                 images.AddRange(ClearCollidersAndGetImages(child, false));
             }
+        }
+
         return images.ToArray();
     }
 
@@ -342,9 +366,14 @@ public class ConstructorManager : MonoBehaviour
         detail.MyConector = conteiner.Conector;
         int MaxIndex = 0;
         if (AllDetails.Count > 1)
+        {
             for (int i = 0; i < AllDetails.Count; i++)
+            {
                 if (detail.NameDetail == AllDetails[i].GetComponent<DetailObject>().NameDetail && AllDetails[i].GetComponent<DetailObject>().IndexDetail >= MaxIndex)
                     MaxIndex = AllDetails[i].GetComponent<DetailObject>().IndexDetail + 1;
+            }
+        }
+
         detail.IndexDetail = MaxIndex;
         detail.IndexObject.GetComponent<InputField>().text = detail.IndexDetail.ToString();
         detail.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
@@ -412,18 +441,15 @@ public class ConstructorManager : MonoBehaviour
     {
         area.position = new Vector3(posX / count, posY / count, 256.1f);
         float defaultIndent = 0.1f;
-        float intensiveUp = (area.localScale.y - 1) * scaleCoefficent + defaultIndent + areaScript.indent;
-        area.localPosition = area.localPosition + area.up * intensiveUp;
+        float intensiveUp = ((area.localScale.y - 1) * scaleCoefficent) + defaultIndent + areaScript.indent;
+        area.localPosition += area.up * intensiveUp;
     }
 
     /// <summary>
     /// Изменение положения зоны в сторону места курсора
     /// </summary>
     /// <param name="area">зона</param>
-    private void SetAreaPosition(Transform area)
-    {
-        area.position = new Vector3(pos.x, pos.y, 256);
-    }
+    private void SetAreaPosition(Transform area) => area.position = new Vector3(pos.x, pos.y, 256);
 
     /// <summary>
     /// Устанавливает материал на изображения
@@ -479,8 +505,10 @@ public class ConstructorManager : MonoBehaviour
         if (Area)
             Area.transform.eulerAngles = new Vector3(0, 0, typeRotateBuild.value * 45f);
         for (int i = 0; i < AllDetails.Count; i++)
+        {
             if (AllDetails[i])
                 AllDetails[i].GetComponent<DetailObject>().FilterDetailConteiner(typeRotateBuild.value);
+        }
     }
 
     /// <summary>
@@ -494,7 +522,7 @@ public class ConstructorManager : MonoBehaviour
             return;
         AllIdDetails.RemoveAt(Id - 1);
         AllParentDetails.RemoveAt(Id - 1);
-        AllDetails.Remove(obj);
+        _ = AllDetails.Remove(obj);
         Destroy(obj);
     }
 
@@ -546,7 +574,9 @@ public class ConstructorManager : MonoBehaviour
             areaScriptFantom.ChangeRotation(AreaFantom.transform.eulerAngles.z);
         }
         else
+        {
             parametersObj.SetActive(false);
+        }
     }
 
     /// <summary>
@@ -560,7 +590,7 @@ public class ConstructorManager : MonoBehaviour
 
         AllDetails.Add(MainComputer);
 
-        saveArea.LoadRobot(NameRobot);
+        _ = saveArea.LoadRobot(NameRobot);
         float[] AngleStr = saveArea.SaverRobot.AngleDetails;
         Vector2[] PositionStr = saveArea.SaverRobot.PositionDetails;
         int[]
@@ -590,12 +620,14 @@ public class ConstructorManager : MonoBehaviour
             AllDetails[i + 1].transform.eulerAngles = new Vector3(0, 0, AngleStr[i]);
         }
         for (int i = 0; i < AllDetails.Count; i++)
+        {
             if (AllDetails[i].GetComponent<DetailComputer>())
             {
                 AllDetails[i].GetComponent<DetailComputer>().Details.Clear();
                 for (int ii = 0; ii < AllDetails.Count; ii++)
                     AllDetails[i].GetComponent<DetailComputer>().Details.Add(AllDetails[ii].GetComponent<DetailObject>());
             }
+        }
 
         for (int i = 0; i < ParentStr.Length; i++)
         {
@@ -692,4 +724,6 @@ public class ConstructorManager : MonoBehaviour
         }
         controler.InfoDetailConteiner.SetActive(false);
     }
+
+    #endregion Methods
 }

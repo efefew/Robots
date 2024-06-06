@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 
 public class RobotManager : MonoBehaviour
 {
     public List<Transform> Moves;
-    public Rigidbody2D rb2D{get; private set;}
-    float maxSpeed = 100, speed;
+    public Rigidbody2D rb2D { get; private set; }
+
+    private float maxSpeed = 100, speed;
     public List<DetailObject> Objects;
     public List<DetailGenerator> Generators;
     public List<DetailBattery> Battery;
@@ -29,8 +31,9 @@ public class RobotManager : MonoBehaviour
     public float AmountBatteryExpenditure;
     [Header("электричество из батареи без избытка")]
     public float AmountBatteryClearIncome;
-    GameManagement gameManagement;
-    void Start()
+    private GameManagement gameManagement;
+
+    private void Start()
     {
         gameManagement = transform.parent.GetComponent<GameManagement>();
         mainComputer = Objects[0].MainBrain;
@@ -50,7 +53,7 @@ public class RobotManager : MonoBehaviour
     {
         for (int i = 0; i < Objects.Count; i++)
         {
-            if(Objects[i] != null)
+            if (Objects[i] != null)
             {
                 Objects[i].electricity = false;
                 Objects[i].transform.SetParent(transform.parent);
@@ -58,11 +61,12 @@ public class RobotManager : MonoBehaviour
         }
         Dead();
     }
-    IEnumerator ElectricityBalancing()
+
+    private IEnumerator ElectricityBalancing()
     {
         while (true)
         {
-            
+
             for (int i = 0; i < Objects.Count; i++)
                 if (!Objects[i])
                     Objects.RemoveAt(i);
@@ -89,11 +93,12 @@ public class RobotManager : MonoBehaviour
 #if UNITY_EDITOR
                 ElectricityConsumption = Objects[idObject].ValReadProperties[3];
 #endif
-                if(ElectricityConsumption > 0 && Objects[idObject].electricity)
+                if (ElectricityConsumption > 0 && Objects[idObject].electricity)
                 {
 
                 }
-                if (ElectricityConsumption < Electricity){
+                if (ElectricityConsumption < Electricity)
+                {
                     Electricity -= ElectricityConsumption;
                     Objects[idObject].electricity = true;
                 }
@@ -102,8 +107,10 @@ public class RobotManager : MonoBehaviour
                     if (AmountInBattery && Battery.Count > 0)
                     {
                         #region взятие из батарей
-                        for (int idBattery = 0; idBattery < Battery.Count; idBattery++){
-                            if (ElectricityConsumption <= (Electricity + Battery[idBattery].AmountElectricity)){
+                        for (int idBattery = 0; idBattery < Battery.Count; idBattery++)
+                        {
+                            if (ElectricityConsumption <= (Electricity + Battery[idBattery].AmountElectricity))
+                            {
                                 AmountBatteryIncome += ElectricityConsumption - Electricity;
                                 Objects[idObject].electricity = true;
                                 Battery[idBattery].UpdateBattery(Battery[idBattery].AmountElectricity - (ElectricityConsumption - Electricity));
@@ -116,7 +123,8 @@ public class RobotManager : MonoBehaviour
                                 AmountBatteryIncome += Battery[idBattery].AmountElectricity;
                                 Battery[idBattery].UpdateBattery(0);
                             }
-                            if ((idBattery + 1) == Battery.Count){
+                            if ((idBattery + 1) == Battery.Count)
+                            {
                                 Objects[idObject].electricity = false;
                                 AmountInBattery = false;
                             }
@@ -131,7 +139,7 @@ public class RobotManager : MonoBehaviour
                 }
             }
             expenditure = Electricity - income;
-#endregion
+            #endregion
             #region остаток
             for (int i = 0; i < Battery.Count; i++)
             {
@@ -149,9 +157,9 @@ public class RobotManager : MonoBehaviour
                 needElectricity += Objects[i].ElectricityConsumption;
             #endregion
             yield return new WaitForSeconds(1f);
-            
+
         }
-       
+
     }
     public bool SearchConteiner(int Id, ref DetailResourceConteiner conteiner)
     {
@@ -167,17 +175,17 @@ public class RobotManager : MonoBehaviour
     }
     public void ElectricityTransaction(DetailGenerator generator)
     {
-        if(generator.ResourceMaxСonsumption > 0)
+        if (generator.ResourceMaxСonsumption > 0)
         {
             DetailResourceConteiner conteiner = null;
-            if (SearchConteiner((int)generator.TargetConteiner,ref conteiner) &&
+            if (SearchConteiner((int)generator.TargetConteiner, ref conteiner) &&
                 conteiner.IdResourceInConteiner == generator.IdResourceСonsumption)
             {
                 Electricity += TransConteiner(ref conteiner.CountResources, generator.ResourceСonsumption) /
                     generator.ResourceMaxСonsumption * generator.ElectricityGenerateMax;
                 conteiner.UpdateResourcesInfo();
             }
-                    
+
         }
         else
             Electricity += generator.ElectricityGenerateMax;
@@ -199,19 +207,20 @@ public class RobotManager : MonoBehaviour
         AmountBatteryExpenditure += maxSumm;
         return recipient;
     }
-    
-    void FixedUpdate()
+
+    private void FixedUpdate()
     {
         if (!InfoCon.BeConstructor)
-            for (int i = 0; i < Moves.Count; i++)
-            {
-                if (!Moves[i])
-                    Moves.RemoveAt(i);
-                else
-                    rb2D.AddForceAtPosition(Moves[i].right * 50 * Moves[i].GetComponent<DetailWhell>().ValReadProperties[6], Moves[i].position);
-            }
-        speed = rb2D.velocity.magnitude * 100;
+        {
+            Moves.RemoveAll((Transform move) => { return move == null; });
+            for (int id = 0; id < Moves.Count; id++)
+                rb2D.AddForceAtPosition(Moves[id].right * 50 * Moves[id].GetComponent<DetailWhell>().ValReadProperties[6], Moves[id].position);
+        }
+
+        speed = rb2D.velocity.magnitude;
         if (speed > maxSpeed)
-            rb2D.velocity = rb2D.velocity.normalized * maxSpeed / 100;
+        {
+            rb2D.velocity = rb2D.velocity.normalized * maxSpeed;
+        }
     }
 }

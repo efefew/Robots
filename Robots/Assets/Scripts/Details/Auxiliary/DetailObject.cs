@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+
 using UnityEngine;
 using UnityEngine.UI;
 /// <summary>
@@ -147,7 +148,7 @@ public class DetailObject : MonoBehaviour
     [SerializeField]
     protected float[] ValueProperties = new float[] { 0 }, ValueReadProperties = new float[] { 100, 100, 1, 0, 0 };
     private float Health, MaxHealth, Mass, baseMass;
-    private const float forceMinimum = 1f;
+    private const float forceMinimum = 10f;
 
     protected virtual void Start()
     {
@@ -512,7 +513,7 @@ public class DetailObject : MonoBehaviour
     /// <param name="_default">поумолчанию</param>
     public void OnChangeOrentation(bool _default = false)
     {
-        beOrentation = _default ? true : !beOrentation;
+        beOrentation = _default || !beOrentation;
         orentationObject.GetComponent<Image>().color = beOrentation ? red : green;
         orentationObject.transform.localEulerAngles = beOrentation ? new Vector3(0, 0, 180) : new Vector3(0, 0, 0);
     }
@@ -600,14 +601,14 @@ public class DetailObject : MonoBehaviour
         labelReadProperty[2] = new TextLanguage("Mass", "Масса");
         labelReadProperty[3] = new TextLanguage("Electricity consumption", "Потребление электричества");
         labelReadProperty[4] = new TextLanguage("Max electricity consumption", "Максимальное потребление электричества");
-        
+
 
         descriptionsReadProperty[0] = new TextLanguage(
 
             "A parameter that determines health at the current time.\n" +
             "Ranges from 0 to max health.\n" +
             "At 75% of max health, cracks appear, at 50% the cracks get stronger, at 25% the part stops working (but can be repaired), at 10% the part comes off the robot and cannot be repaired.\n" +
-            "When health reaches zero, the detail will be annihilated.", 
+            "When health reaches zero, the detail will be annihilated.",
 
             "Параметр определяющий здоровье в текущий момент времени.\n" +
             "Находится в диапазоне от 0 до максимального здоровья.\n" +
@@ -623,24 +624,24 @@ public class DetailObject : MonoBehaviour
         descriptionsReadProperty[2] = new TextLanguage(
 
             "A parameter that determines the mass.\n" +
-            "Affects the inertia of the robot.", 
+            "Affects the inertia of the robot.",
 
             "Параметр определяющий массу.\n" +
             "Влияет на инерцию робота.");
-        
+
         descriptionsReadProperty[3] = new TextLanguage(
 
             "A parameter that determines electricity consumption.\n" +
             "Consumption depends on the sum of all the stats that contribute to the power of the part.\n" +
-            "Ranges from 0 to maximum electricity consumption.", 
+            "Ranges from 0 to maximum electricity consumption.",
 
             "Параметр определяющий потребление электричества.\n" +
             "Потребление зависит от суммы всех характеристик, которые влияют на мощь детали.\n" +
             "Находится в диапазоне от 0 до максимального потребления электричества.");
 
         descriptionsReadProperty[4] = new TextLanguage(
-            
-            "A parameter that determines the maximum consumption of electricity.", 
+
+            "A parameter that determines the maximum consumption of electricity.",
 
             "Параметр определяющий максимальное потребление электричества.");
     }
@@ -701,7 +702,7 @@ public class DetailObject : MonoBehaviour
                 return "Is in the range from " + min + " to " + max + ".\n";
             case Language.LanguageType.russian:
                 return "Находится в диапазоне от " + min + " до " + max + ".\n";
-            default : return "";
+            default: return "";
         }
     }
     /// <summary>
